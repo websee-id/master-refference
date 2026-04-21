@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "profile_id": "mp-obayito-digital-marketing-001",
+    "language": "id-ID"
+  },
+  "organization": {
+    "name": "PT Obayito",
+    "city": "Bekasi",
+    "sector": "Pemasaran"
+  },
+  "program": {
+    "name": "Pelatihan Digital Marketing untuk UMK",
+    "goal": "Meningkatkan penjualan UMKM melalui strategi digital",
+    "target_participants": "owner UMKM",
+    "core_problem": "UMKM belum optimal memanfaatkan media digital untuk peningkatan penjualan",
+    "competency_focus": "Strategi peningkatan penjualan melalui media digital",
+    "location": "Jakarta",
+    "duration": {
+      "value": 5,
+      "unit": "hari"
+    },
+    "delivery_method": "hybrid",
+    "evaluation_methods": [
+      "ujian tertulis",
+      "praktik"
+    ],
+    "expected_outcomes": [
+      "Peserta mampu menyusun strategi penjualan digital",
+      "Peserta mampu mengoptimalkan kanal promosi daring"
+    ],
+    "field": "Pemasaran"
+  },
+  "training": {
+    "name": "Strategi Peningkatan Penjualan Melalui Media Digital"
+  },
+  "skkni": {
+    "selected_unit_codes": [
+      "N.79JPW00.139.1"
+    ],
+    "selected_unit_snapshots": [
+      {
+        "unitCode": "N.79JPW00.139.1",
+        "unitTitle": "Mengembangkan Strategi Peningkatan Penjualan Media Digital"
+      }
+    ]
+  },
+  "delivery_evidence": {
+    "platform": "Google Classroom",
+    "class_name": "Pelatihan Digital Marketing Batch 1",
+    "teacher_name": "Budi Santoso",
+    "assignment_examples": [
+      {
+        "title": "Tugas Funnel Konten",
+        "instructions": "Buat rencana konten 7 hari untuk produk UMKM.",
+        "points": 100,
+        "due_date": "2026-05-18",
+        "topic": "Konten",
+        "rubric": "Relevansi, konsistensi, dan kelengkapan strategi",
+        "attachments": [
+          "https://example.com/video"
+        ]
+      }
+    ]
+  },
+  "partnership": {
+    "document_number": "PKS/OBY/05/2026",
+    "agreement_date": "2026-05-10",
+    "agreement_location": "Jakarta",
+    "party_one": {
+      "organization_name": "PT Obayito",
+      "representative_name": "Rina Pratiwi",
+      "representative_title": "Direktur",
+      "address": "Bekasi"
+    },
+    "party_two": {
+      "organization_name": "PT Mitra Digital Nusantara",
+      "representative_name": "Andi Saputra",
+      "representative_title": "Direktur Utama",
+      "address": "Jakarta"
+    },
+    "program_scope": "Penyelenggaraan pelatihan digital marketing untuk UMK",
+    "cost_estimate": 55000000,
+    "payment_terms": "50% di muka, 50% setelah selesai",
+    "duration_clause": "selama program berlangsung",
+    "dispute_resolution": "musyawarah"
+  },
+  "evaluation_summary": {
+    "trainer_name": "Budi Santoso",
+    "participant_count": 20,
+    "feedback_count": 18,
+    "quantitative_results": [
+      {
+        "aspect": "materi",
+        "scale": "1-4",
+        "scores": [4, 4, 3]
+      }
+    ],
+    "qualitative_feedback": [
+      "materi relevan"
+    ],
+    "conclusion": "pelatihan berjalan baik",
+    "recommendations": [
+      "tambahkan studi kasus"
+    ]
+  }
+}
