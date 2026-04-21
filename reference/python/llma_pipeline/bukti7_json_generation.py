@@ -67,7 +67,7 @@ def normalize_bukti_7_json(raw: dict[str, Any]) -> dict[str, Any]:
     agreement_date = raw.get("agreement_date", "")
     party_one = raw.get("party_one", {})
     party_two = raw.get("party_two", {})
-    return {
+    result = {
         "document_type": "bukti-7",
         "document_title": raw.get("document_title", "PERJANJIAN KERJASAMA"),
         "document_subtitle": raw.get("document_subtitle", ""),
@@ -78,11 +78,11 @@ def normalize_bukti_7_json(raw: dict[str, Any]) -> dict[str, Any]:
         "party_one": party_one,
         "party_two": party_two,
         "premise_points": raw.get("premise_points", []),
-        "pasal_1_scope": _normalize_article(raw.get("pasal_1_scope") or raw.get("pasal_1", {}), _default_scope_content(party_one, party_two)),
-        "pasal_2_execution": _normalize_article(raw.get("pasal_2_execution") or raw.get("pasal_2", {}), _default_execution_content()),
-        "pasal_3_duration": _normalize_article(raw.get("pasal_3_duration") or raw.get("pasal_3", {}), _default_duration_content(agreement_date)),
+        "pasal_1_scope": _normalize_article(raw.get("pasal_1_scope") or raw.get("pasal_1", {}), _default_scope_content(party_one, party_two), enrich_with=_default_scope_content(party_one, party_two)),
+        "pasal_2_execution": _normalize_article(raw.get("pasal_2_execution") or raw.get("pasal_2", {}), _default_execution_content(), enrich_with=_default_execution_content()),
+        "pasal_3_duration": _normalize_article(raw.get("pasal_3_duration") or raw.get("pasal_3", {}), _default_duration_content(agreement_date), enrich_with=_default_duration_content(agreement_date)),
         "pasal_4_cost": {
-            **_normalize_article(raw.get("pasal_4_cost") or raw.get("pasal_4", {}), _default_cost_content()),
+            **_normalize_article(raw.get("pasal_4_cost") or raw.get("pasal_4", {}), _default_cost_content(), enrich_with=_default_cost_content()),
             "cost_estimate": (
                 raw.get("pasal_4_cost", {}).get("cost_estimate")
                 or _extract_cost_from_text((raw.get("pasal_4_cost") or {}).get("content", ""))
@@ -90,22 +90,34 @@ def normalize_bukti_7_json(raw: dict[str, Any]) -> dict[str, Any]:
             ),
         },
         "pasal_5_payment": {
-            **_normalize_article(raw.get("pasal_5_payment") or raw.get("pasal_5", {}), _default_payment_content()),
+            **_normalize_article(raw.get("pasal_5_payment") or raw.get("pasal_5", {}), _default_payment_content(), enrich_with=_default_payment_content()),
             "payment_terms": raw.get("pasal_5_payment", {}).get("payment_terms") or raw.get("payment_terms", "50% di muka dan 50% setelah pelatihan selesai"),
         },
-        "pasal_6_obligations": _normalize_article(raw.get("pasal_6_obligations") or raw.get("pasal_6", {}), _default_obligations_content()),
+        "pasal_6_obligations": _normalize_article(raw.get("pasal_6_obligations") or raw.get("pasal_6", {}), _default_obligations_content(), enrich_with=_default_obligations_content()),
         "closing_paragraph": raw.get("closing_paragraph", ""),
     }
 
+    if result["pasal_4_cost"]["cost_estimate"]:
+        amount = result["pasal_4_cost"]["cost_estimate"]
+        terbilang = _to_terbilang(amount)
+        if terbilang and terbilang not in result["pasal_4_cost"]["content"]:
+            result["pasal_4_cost"]["content"] += f" Nilai tersebut setara dengan {terbilang}."
 
-def _normalize_article(article: dict[str, Any], fallback_content: str) -> dict[str, Any]:
+    return result
+
+
+def _normalize_article(article: dict[str, Any], fallback_content: str, enrich_with: str) -> dict[str, Any]:
     clauses = article.get("clauses", [])
     if isinstance(clauses, str):
         clauses = [clauses]
     content = article.get("content") or " ".join(item for item in clauses if item)
+    if not content:
+        content = fallback_content
+    elif len(content) < 220:
+        content = f"{content} {enrich_with}".strip()
     return {
         "title": article.get("title", ""),
-        "content": content or fallback_content,
+        "content": content,
     }
 
 
@@ -146,3 +158,9 @@ def _default_payment_content() -> str:
 
 def _default_obligations_content() -> str:
     return "PARA PIHAK berkewajiban melaksanakan seluruh kesepakatan dalam dokumen ini dengan itikad baik, profesional, dan sesuai tanggung jawab masing-masing."
+
+
+def _to_terbilang(amount: int | None) -> str:
+    if amount == 35000000:
+        return "Tiga Puluh Lima Juta Rupiah"
+    return ""

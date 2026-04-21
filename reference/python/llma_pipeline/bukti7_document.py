@@ -53,6 +53,10 @@ def render_bukti_7_html(data: dict[str, Any]) -> str:
   <body>
     <h1>{html.escape(data.get('document_title', 'PERJANJIAN KERJASAMA'))}</h1>
     <h2>{html.escape(data.get('document_subtitle', ''))}</h2>
+    <p class="center"><strong>ANTARA</strong></p>
+    <p class="center"><strong>{html.escape(party_one.get('organization_name', ''))}</strong></p>
+    <p class="center">dengan</p>
+    <p class="center"><strong>{html.escape(party_two.get('organization_name', ''))}</strong></p>
     <p class="center">No. {html.escape(data.get('document_number', ''))}</p>
     <p class="center">Pada tanggal {html.escape(data.get('agreement_date', ''))} di {html.escape(data.get('agreement_location', ''))}</p>
     <p>{html.escape(data.get('opening_paragraph', ''))}</p>
