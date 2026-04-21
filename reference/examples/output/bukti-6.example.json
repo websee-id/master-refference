@@ -1,0 +1,159 @@
+{
+  "document_type": "bukti-6",
+  "document_title": "MARKETING PLAN",
+  "program_identity": {
+    "program_name": "Pelatihan Digital Marketing untuk UMK",
+    "training_name": "Strategi Peningkatan Penjualan Melalui Media Digital",
+    "organization_name": "PT Obayito",
+    "organization_city": "Bekasi",
+    "sector": "Pemasaran",
+    "target_participants": "owner UMKM",
+    "delivery_method": "Online",
+    "duration": "10 JP"
+  },
+  "executive_summary": "Rencana pemasaran ini disusun oleh PT Obayito untuk meluncurkan program 'Pelatihan Digital Marketing untuk UMK' dengan fokus pada 'Strategi Peningkatan Penjualan Melalui Media Digital'. Program berdurasi 10 Jam Pelajaran (JP) ini diselenggarakan secara online dan dirancang khusus untuk menjawab permasalahan utama para pemilik UMKM: pengeluaran iklan yang boros namun memberikan hasil penjualan yang minim (boncos). Melalui pendekatan praktis yang berujung pada evaluasi praktik membuat kampanye, marketing plan ini menguraikan strategi komprehensif untuk mengakuisisi 500 peserta dalam kuartal mendatang. Strategi ini mencakup analisis pasar, penetapan segmentasi yang presisi, taktik promosi digital, alokasi anggaran yang efisien, serta Key Performance Indicators (KPI) yang terukur untuk memastikan Return on Investment (ROI) pemasaran yang optimal.",
+  "marketing_objectives": [
+    {
+      "objective": "Mengakuisisi 500 pemilik UMKM sebagai peserta berbayar dalam waktu 3 bulan peluncuran kampanye.",
+      "target_metric": "",
+      "timeframe": ""
+    },
+    {
+      "objective": "Mencapai Conversion Rate sebesar 5% dari total pengunjung landing page menjadi peserta terdaftar.",
+      "target_metric": "",
+      "timeframe": ""
+    },
+    {
+      "objective": "Menghasilkan 10.000 leads berkualitas melalui strategi Lead Magnet (Webinar Gratis dan E-book).",
+      "target_metric": "",
+      "timeframe": ""
+    },
+    {
+      "objective": "Mempertahankan Customer Acquisition Cost (CAC) di bawah Rp 75.000 per peserta.",
+      "target_metric": "",
+      "timeframe": ""
+    }
+  ],
+  "market_analysis": {
+    "current_market_condition": "Sektor UMKM di Indonesia terus mengalami percepatan digitalisasi. Namun, literasi digital yang tidak merata menyebabkan banyak pemilik UMKM terjun ke periklanan digital (Meta Ads, TikTok Ads) tanpa strategi yang matang. Fenomena 'iklan boncos' menjadi keluhan utama di berbagai komunitas bisnis; di mana biaya yang dikeluarkan untuk iklan jauh lebih besar daripada margin keuntungan penjualan. Kebutuhan pasar saat ini bukan lagi sekadar pengenalan platform digital, melainkan strategi optimasi tingkat lanjut yang berfokus pada Return on Ad Spend (ROAS). Dengan metode pengiriman online, PT Obayito memiliki peluang untuk menjangkau pasar nasional, meskipun penetrasi awal akan difokuskan pada ekosistem UMKM di Jabodetabek.",
+    "target_market_overview": "Sektor UMKM di Indonesia terus mengalami percepatan digitalisasi. Namun, literasi digital yang tidak merata menyebabkan banyak pemilik UMKM terjun ke periklanan digital (Meta Ads, TikTok Ads) tanpa strategi yang matang. Fenomena 'iklan boncos' menjadi keluhan utama di berbagai komunitas bisnis; di mana biaya yang dikeluarkan untuk iklan jauh lebih besar daripada margin keuntungan penjualan. Kebutuhan pasar saat ini bukan lagi sekadar pengenalan platform digital, melainkan strategi optimasi tingkat lanjut yang berfokus pada Return on Ad Spend (ROAS). Dengan metode pengiriman online, PT Obayito memiliki peluang untuk menjangkau pasar nasional, meskipun penetrasi awal akan difokuskan pada ekosistem UMKM di Jabodetabek.",
+    "problem_context": "iklan boros tapi hasil minim",
+    "opportunity_analysis": "Sektor UMKM di Indonesia terus mengalami percepatan digitalisasi. Namun, literasi digital yang tidak merata menyebabkan banyak pemilik UMKM terjun ke periklanan digital (Meta Ads, TikTok Ads) tanpa strategi yang matang. Fenomena 'iklan boncos' menjadi keluhan utama di berbagai komunitas bisnis; di mana biaya yang dikeluarkan untuk iklan jauh lebih besar daripada margin keuntungan penjualan. Kebutuhan pasar saat ini bukan lagi sekadar pengenalan platform digital, melainkan strategi optimasi tingkat lanjut yang berfokus pada Return on Ad Spend (ROAS). Dengan metode pengiriman online, PT Obayito memiliki peluang untuk menjangkau pasar nasional, meskipun penetrasi awal akan difokuskan pada ekosistem UMKM di Jabodetabek."
+  },
+  "market_segments": [
+    {
+      "segment_name": "Pemilik Usaha Mikro (F&B dan Fashion)",
+      "description": "Pemilik usaha yang mengelola bisnisnya sendiri, memiliki budget pemasaran terbatas (di bawah Rp 5 juta/bulan), dan pernah mengalami kerugian saat mencoba beriklan di Instagram atau TikTok."
+    },
+    {
+      "segment_name": "Reseller dan Dropshipper Skala Menengah",
+      "description": "Pelaku usaha yang mengandalkan volume penjualan tinggi dengan margin tipis. Mereka membutuhkan strategi iklan digital yang sangat efisien untuk memenangkan persaingan harga."
+    },
+    {
+      "segment_name": "Manajer Pemasaran/Admin UMKM",
+      "description": "Karyawan yang ditugaskan oleh pemilik UMKM (Owner) untuk mengelola media sosial dan iklan, yang membutuhkan peningkatan kompetensi teknis dalam membuat kampanye yang menghasilkan konversi."
+    }
+  ],
+  "competitor_analysis": [
+    {
+      "competitor_name": "Program Pelatihan Digital Pemerintah (Gratis)",
+      "strengths": "Tidak berbayar, jangkauan luas, didukung oleh kementerian.",
+      "weaknesses": "Materi terlalu dasar (basic), kurang pendampingan teknis, tidak berfokus pada optimasi iklan berbayar tingkat lanjut."
+    },
+    {
+      "competitor_name": "Bootcamp Digital Marketing Skala Besar (B2C)",
+      "strengths": "Branding kuat, kurikulum sangat komprehensif (berbulan-bulan), fasilitas lengkap.",
+      "weaknesses": "Harga sangat mahal (di atas Rp 5 juta), waktu belajar terlalu lama bagi pemilik UMKM yang sibuk, materi terlalu teoritis."
+    }
+  ],
+  "value_proposition": {
+    "main_value": "Stop Boncos, Mulai Cuan! Pelatihan 10 Jam Praktik Langsung Bikin Kampanye Iklan yang Menghasilkan Penjualan. Berbeda dengan pelatihan teoritis lainnya, program PT Obayito berfokus 100% pada penyelesaian masalah 'iklan boros'. Peserta akan dibimbing secara online untuk langsung mempraktikkan pembuatan kampanye iklan yang terstruktur, tertarget, dan efisien, sehingga setiap rupiah yang dikeluarkan memberikan dampak langsung pada peningkatan penjualan.",
+    "key_differentiators": [
+      "Stop Boncos, Mulai Cuan! Pelatihan 10 Jam Praktik Langsung Bikin Kampanye Iklan yang Menghasilkan Penjualan. Berbeda dengan pelatihan teoritis lainnya, program PT Obayito berfokus 100% pada penyelesaian masalah 'iklan boros'. Peserta akan dibimbing secara online untuk langsung mempraktikkan pembuatan kampanye iklan yang terstruktur, tertarget, dan efisien, sehingga setiap rupiah yang dikeluarkan memberikan dampak langsung pada peningkatan penjualan."
+    ]
+  },
+  "marketing_strategy": {
+    "product_strategy": "Pelatihan online intensif 10 JP 'Strategi Peningkatan Penjualan Melalui Media Digital'. Output berorientasi pada praktik langsung membuat kampanye iklan digital yang siap dijalankan.",
+    "pricing_strategy": "Strategi Pricing Tiered: Early Bird Rp 249.000 (untuk 100 pendaftar pertama), Harga Normal Rp 499.000. Harga ini diposisikan sebagai investasi terjangkau yang setara dengan 'menyelamatkan budget iklan 1 hari'.",
+    "promotion_strategy": "Menggunakan pendekatan Funnel Marketing. Top of Funnel (Awareness): Video pendek edukasi di TikTok/Reels tentang kesalahan umum beriklan. Middle of Funnel (Consideration): Webinar gratis 'Bedah Kasus Iklan Boncos UMKM' sebagai Lead Magnet. Bottom of Funnel (Conversion): Retargeting Ads dengan testimoni dan penawaran urgensi (diskon terbatas).",
+    "distribution_strategy": "Distribusi pemasaran sepenuhnya digital. Pendaftaran melalui Landing Page terintegrasi, dan pelaksanaan pelatihan menggunakan platform Zoom Meetings dan Learning Management System (LMS) PT Obayito.",
+    "communication_strategy": "Menggunakan pendekatan Funnel Marketing. Top of Funnel (Awareness): Video pendek edukasi di TikTok/Reels tentang kesalahan umum beriklan. Middle of Funnel (Consideration): Webinar gratis 'Bedah Kasus Iklan Boncos UMKM' sebagai Lead Magnet. Bottom of Funnel (Conversion): Retargeting Ads dengan testimoni dan penawaran urgensi (diskon terbatas)."
+  },
+  "budget_breakdown": [
+    {
+      "item": "Meta Ads (Facebook & Instagram)",
+      "amount_idr": 15000000,
+      "description": "Fokus pada konversi dan retargeting pengunjung landing page."
+    },
+    {
+      "item": "TikTok Ads",
+      "amount_idr": 10000000,
+      "description": "Fokus pada awareness dan pengumpulan leads melalui Lead Generation objective."
+    },
+    {
+      "item": "KOL / Micro-Influencer Bisnis",
+      "amount_idr": 7500000,
+      "description": "Endorsement oleh 3-5 akun edukasi bisnis UMKM di Instagram/TikTok."
+    },
+    {
+      "item": "Software & Tools (Email Marketing, Landing Page)",
+      "amount_idr": 2500000,
+      "description": "Langganan platform email automation dan hosting."
+    },
+    {
+      "item": "Biaya Kemitraan Komunitas UMKM",
+      "amount_idr": 5000000,
+      "description": "Sponsorship atau sistem afiliasi dengan komunitas UMKM lokal di Jakarta dan Bekasi."
+    }
+  ],
+  "timeline": [
+    {
+      "phase": "Bulan 1: Persiapan & Awareness",
+      "activity": "Riset audiens, pembuatan materi iklan (copywriting & video), peluncuran landing page, dan penayangan iklan Top of Funnel (Edukasi).",
+      "period": ""
+    },
+    {
+      "phase": "Bulan 2: Lead Generation & Consideration",
+      "activity": "Pelaksanaan 2x Webinar Gratis sebagai Lead Magnet, pengumpulan database email/WA, dan aktivasi Email Nurturing Sequence.",
+      "period": ""
+    },
+    {
+      "phase": "Bulan 3: Konversi & Retargeting",
+      "activity": "Penayangan iklan Retargeting dengan penawaran Early Bird, follow-up database leads via WhatsApp Blast, penutupan pendaftaran, dan onboarding peserta.",
+      "period": ""
+    }
+  ],
+  "kpi": [
+    {
+      "name": "Total Peserta Terdaftar (Paid)",
+      "target": "500 Peserta",
+      "measurement": ""
+    },
+    {
+      "name": "Cost Per Lead (CPL)",
+      "target": "< Rp 4.000",
+      "measurement": ""
+    },
+    {
+      "name": "Customer Acquisition Cost (CPA)",
+      "target": "< Rp 75.000",
+      "measurement": ""
+    },
+    {
+      "name": "Return on Ad Spend (ROAS) Pemasaran",
+      "target": "> 3.5x",
+      "measurement": ""
+    },
+    {
+      "name": "Webinar Attendance Rate",
+      "target": "> 35% dari total pendaftar webinar",
+      "measurement": ""
+    }
+  ],
+  "conclusion": "Rencana pemasaran ini dirancang secara realistis dan strategis untuk memastikan program 'Pelatihan Digital Marketing untuk UMK' dari PT Obayito dapat terserap maksimal oleh pasar. Dengan menargetkan pain point spesifik yaitu 'iklan boros tapi hasil minim', dan menawarkan solusi praktis berdurasi 10 JP secara online, program ini memiliki daya tarik yang kuat. Eksekusi yang disiplin terhadap strategi funneling, optimalisasi anggaran sebesar Rp 40.000.000, dan pemantauan ketat terhadap KPI akan menjamin tercapainya target akuisisi 500 peserta, sekaligus memperkuat posisi PT Obayito sebagai mitra pelatihan pemasaran digital terpercaya bagi UMKM di Indonesia.",
+  "sign_off": {
+    "prepared_by": "Trainer Utama",
+    "city": "Bekasi",
+    "date": "21 April 2026"
+  }
+}

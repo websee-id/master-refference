@@ -1,0 +1,54 @@
+{
+  "document_type": "bukti-7",
+  "document_title": "PERJANJIAN KERJASAMA",
+  "document_subtitle": "",
+  "document_number": "DRAFT/PELATIHAN DI",
+  "agreement_date": "20 April 2026",
+  "agreement_location": "Jakarta",
+  "opening_paragraph": "Pada hari ini, tanggal 20 April 2026, bertempat di Jakarta, yang bertanda tangan di bawah ini:",
+  "party_one": {
+    "organization_name": "PT Obayito",
+    "representative_name": "",
+    "representative_title": "Trainer",
+    "address": "Bekasi"
+  },
+  "party_two": {
+    "organization_name": "Mitra Pelatihan Indonesia",
+    "representative_name": "Perwakilan Mitra",
+    "representative_title": "Direktur",
+    "address": "Jakarta"
+  },
+  "premise_points": [
+    "Bahwa PIHAK PERTAMA adalah perusahaan yang bergerak di bidang penyediaan jasa pelatihan dan pengembangan sumber daya manusia.",
+    "Bahwa PIHAK KEDUA adalah entitas yang membutuhkan peningkatan kapasitas dan kompetensi di bidang pemasaran digital untuk Usaha Mikro dan Kecil (UMK).",
+    "Bahwa kedua belah pihak sepakat untuk menjalin kerja sama yang saling menguntungkan dalam pelaksanaan program Pelatihan Digital Marketing untuk UMK.",
+    "Bahwa berdasarkan pertimbangan-pertimbangan tersebut di atas, para pihak sepakat untuk mengikatkan diri dalam Perjanjian Kerja Sama ini dengan syarat dan ketentuan yang diatur lebih lanjut dalam pasal-pasal berikut."
+  ],
+  "pasal_1_scope": {
+    "title": "Pasal 1 - Ruang Lingkup Kerja Sama",
+    "content": "Ruang lingkup kerja sama ini mencakup penyelenggaraan program Pelatihan Digital Marketing untuk UMK, di mana PIHAK PERTAMA akan menyediakan materi, tenaga pengajar, dan fasilitas pendukung pelatihan, sedangkan PIHAK KEDUA akan menyediakan peserta pelatihan sesuai dengan target yang disepakati."
+  },
+  "pasal_2_execution": {
+    "title": "Pasal 2 - Pelaksanaan Kegiatan",
+    "content": "Pelaksanaan kegiatan pelatihan akan dilakukan secara tatap muka atau daring sesuai dengan jadwal yang akan disepakati kemudian oleh kedua belah pihak. PIHAK PERTAMA bertanggung jawab penuh atas kualitas materi dan penyampaian pelatihan."
+  },
+  "pasal_3_duration": {
+    "title": "Pasal 3 - Jangka Waktu Perjanjian",
+    "content": "Perjanjian Kerja Sama ini berlaku efektif sejak tanggal ditandatanganinya dokumen ini dan akan berakhir setelah seluruh rangkaian program Pelatihan Digital Marketing untuk UMK selesai dilaksanakan dan kewajiban masing-masing pihak terpenuhi."
+  },
+  "pasal_4_cost": {
+    "title": "Pasal 4 - Biaya Pelaksanaan",
+    "content": "Total biaya pelaksanaan program Pelatihan Digital Marketing untuk UMK ini adalah sebesar Rp35.000.000,- (tiga puluh lima juta rupiah). Biaya tersebut sudah mencakup honorarium pengajar, materi pelatihan, dan sertifikat peserta. Nilai tersebut setara dengan Tiga Puluh Lima Juta Rupiah.",
+    "cost_estimate": 35000000
+  },
+  "pasal_5_payment": {
+    "title": "Pasal 5 - Tata Cara Pembayaran",
+    "content": "Pembayaran biaya pelaksanaan sebagaimana dimaksud dalam Pasal 4 akan dilakukan oleh PIHAK KEDUA kepada PIHAK PERTAMA dengan ketentuan: 50% dibayarkan di muka pada saat penandatanganan perjanjian ini, dan 50% sisanya dibayarkan setelah seluruh rangkaian pelatihan selesai dilaksanakan.",
+    "payment_terms": "50% di muka dan 50% setelah pelatihan selesai"
+  },
+  "pasal_6_obligations": {
+    "title": "Pasal 6 - Hak dan Kewajiban Para Pihak",
+    "content": "PIHAK PERTAMA berhak menerima pembayaran dan berkewajiban menyelenggarakan pelatihan dengan standar profesional. PIHAK KEDUA berhak menerima layanan pelatihan yang berkualitas dan berkewajiban melakukan pembayaran tepat waktu serta memastikan kehadiran peserta."
+  },
+  "closing_paragraph": "Demikian Perjanjian Kerja Sama ini dibuat dan ditandatangani oleh para pihak dalam keadaan sadar, tanpa paksaan dari pihak manapun, dibuat dalam rangkap 2 (dua) bermaterai cukup yang masing-masing memiliki kekuatan hukum yang sama."
+}

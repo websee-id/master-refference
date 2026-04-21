@@ -9,6 +9,7 @@ It is intended to be reused in another application, with no obligation to use th
 ### 1. Architecture and prompt docs
 - `docs/carbone-json-generation-final.md`
 - `docs/sample-equivalent-prototype-contract.md`
+- `docs/output-reference-examples.md`
 
 These documents define:
 - minimal interview flow
@@ -55,8 +56,9 @@ The reusable parts are:
 
 1. Start from `docs/sample-equivalent-prototype-contract.md`
 2. Read `docs/carbone-json-generation-final.md`
-3. Port the data contracts and prompt logic into your production stack
-4. Use the Python code only as a behavioral reference, not as a required foundation
+3. Read `docs/output-reference-examples.md`
+4. Port the data contracts and prompt logic into your production stack
+5. Use the Python code only as a behavioral reference, not as a required foundation
 
 ## Included example input
 

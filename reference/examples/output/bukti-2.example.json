@@ -1,0 +1,69 @@
+{
+  "document_type": "bukti-2",
+  "document_title": "TRAINING NEED ANALYSIS",
+  "document_subtitle": "TNA MIKRO",
+  "organization_profile": {
+    "organization_name": "PT Obayito",
+    "sector": "Pemasaran",
+    "business_description": "PT Obayito merupakan sebuah entitas bisnis yang bergerak di sektor Pemasaran, dengan fokus utama pada pemberdayaan dan eskalasi kapasitas bisnis Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia. Menyadari bahwa UMKM adalah tulang punggung perekonomian nasional, PT Obayito berdedikasi untuk menyediakan solusi pemasaran yang inovatif, adaptif, dan berbasis data. Melalui berbagai inisiatif strategis, perusahaan berkomitmen untuk menjembatani kesenjangan pengetahuan digital yang sering kali menjadi hambatan utama bagi para pelaku usaha mikro dalam bersaing di pasar yang semakin terdigitalisasi dan kompetitif."
+  },
+  "program_identity": {
+    "program_name": "Pelatihan Digital Marketing untuk UMK",
+    "program_goal": "Meningkatkan penjualan UMKM melalui penerapan strategi digital yang efektif, efisien, dan terukur.",
+    "target_participants": "Owner UMKM",
+    "core_problem": "iklan boros tapi hasil minim",
+    "competency_focus": "Mampu mengembangkan strategi untuk meningkatkan penjualan media digital."
+  },
+  "vision": "Menjadi mitra strategis dan katalisator terdepan bagi UMKM di Indonesia dalam mewujudkan pertumbuhan bisnis yang eksponensial dan berkelanjutan melalui transformasi digital serta praktik pemasaran modern yang tepat guna.",
+  "mission": [
+    "Menyelenggarakan program edukasi dan pelatihan pemasaran digital yang komprehensif, praktis, dan mudah diaplikasikan oleh pelaku UMKM.",
+    "Membantu UMKM mengoptimalkan efisiensi biaya operasional pemasaran, khususnya dalam menekan pemborosan anggaran iklan digital.",
+    "Mendorong kemandirian dan kapabilitas analitis para owner UMKM dalam merancang, mengeksekusi, dan mengevaluasi kampanye pemasaran digital secara mandiri.",
+    "Membangun ekosistem bisnis yang kolaboratif guna mendukung peningkatan daya saing produk lokal di pasar nasional maupun global."
+  ],
+  "sdm_analysis": {
+    "position_name": "Owner UMKM",
+    "function": "Melaksanakan kegiatan utama yang terkait dengan konteks pelatihan.",
+    "main_tasks": [
+      "Mengidentifikasi masalah utama dalam pekerjaan atau usaha",
+      "Menyusun pendekatan penyelesaian yang relevan",
+      "Mengevaluasi hasil implementasi strategi"
+    ],
+    "performance_standards": [
+      "Mampu menjalankan tugas dengan pendekatan yang terarah",
+      "Mampu mengambil keputusan berdasarkan data dan konteks",
+      "Mampu menerapkan hasil pelatihan secara konsisten"
+    ],
+    "narrative": "Berdasarkan observasi dan asesmen awal terhadap target peserta, yaitu para Owner UMKM, ditemukan bahwa sebagian besar dari mereka memiliki tingkat dedikasi yang tinggi serta pemahaman produk (product knowledge) yang sangat baik. Namun demikian, dari sisi kapabilitas Sumber Daya Manusia (SDM) dalam ranah pemasaran digital, terdapat kendala yang cukup signifikan. Mayoritas owner UMKM merangkap berbagai peran manajerial sekaligus operasional, sehingga waktu dan kesempatan untuk mendalami teknis pemasaran digital secara otodidak sangat terbatas. Permasalahan utama (core problem) yang dihadapi saat ini adalah 'iklan boros tapi hasil minim'. Hal ini mengindikasikan bahwa para owner UMKM sebenarnya telah memiliki kesadaran untuk berinvestasi pada iklan berbayar (paid ads), namun eksekusinya masih bersifat trial-and-error tanpa landasan strategi yang kuat. Mereka cenderung melakukan pengaturan target audiens yang terlalu luas (broad targeting), tidak melakukan pengujian (A/B testing) pada materi iklan, dan kurang memahami cara membaca metrik performa iklan seperti CTR (Click-Through Rate), CPC (Cost Per Click), dan ROAS (Return on Ad Spend). Akibatnya, anggaran pemasaran terkuras habis tanpa menghasilkan konversi penjualan yang sepadan dengan investasi yang dikeluarkan."
+  },
+  "competency_needs_analysis": {
+    "competency_focus": "Mampu mengembangkan strategi untuk meningkatkan penjualan media digital.",
+    "current_competency_level": "Peserta saat ini umumnya hanya mampu menjalankan fitur dasar periklanan digital (seperti tombol 'Boost Post' di media sosial) tanpa perencanaan anggaran yang matang, penargetan audiens yang spesifik, maupun evaluasi metrik keberhasilan yang terstandarisasi.",
+    "expected_competency_level": "Peserta diharapkan mampu merancang strategi pemasaran digital yang komprehensif, melakukan riset audiens secara mendalam, mengelola anggaran iklan secara efisien, mengoptimalkan kampanye berdasarkan data analitik, dan pada akhirnya mampu meningkatkan Return on Ad Spend (ROAS) secara konsisten.",
+    "competency_gap": "Terdapat kesenjangan (gap) kompetensi yang substansial antara praktik periklanan instan yang saat ini dilakukan dengan metodologi periklanan digital berbasis data yang seharusnya diterapkan. Kesenjangan ini mencakup kurangnya pemahaman tentang pemetaan Buyer Persona, ketidakmampuan menyusun Copywriting yang persuasif, serta minimnya keterampilan teknis dalam menggunakan dashboard periklanan profesional (seperti Meta Ads Manager atau Google Ads) untuk melakukan optimasi, tracking konversi, dan retargeting audiens."
+  },
+  "training_recommendations": [
+    {
+      "module_name": "Fondasi Digital Marketing & Pemetaan Buyer Persona",
+      "objective": "Membekali peserta dengan pola pikir pemasaran digital yang benar dan kemampuan mengidentifikasi target pasar yang spesifik agar penargetan iklan tidak salah sasaran dan lebih relevan."
+    },
+    {
+      "module_name": "Strategi Copywriting dan Pembuatan Creative Assets",
+      "objective": "Meningkatkan kemampuan peserta dalam membuat teks iklan (copy) dan visual yang mampu menarik perhatian (hook), mempertahankan minat, serta mendorong audiens untuk melakukan tindakan pembelian (Call to Action)."
+    },
+    {
+      "module_name": "Teknis Manajemen Iklan Profesional (Meta/Google Ads)",
+      "objective": "Mengajarkan transisi dari penggunaan fitur iklan dasar ke dashboard profesional, termasuk cara mengatur struktur kampanye, ad set, penempatan iklan, dan bidding strategy yang efisien untuk mencegah kebocoran anggaran."
+    },
+    {
+      "module_name": "Analitik, Evaluasi, dan Strategi Retargeting",
+      "objective": "Melatih peserta untuk membaca dan menganalisis metrik iklan, mengambil keputusan untuk menghentikan iklan yang merugi (cut loss), melipatgandakan anggaran pada iklan yang berkinerja baik (scaling), serta menargetkan ulang calon pelanggan potensial yang belum melakukan pembelian."
+    }
+  ],
+  "conclusion": "Berdasarkan Training Needs Analysis (TNA) Mikro yang telah dilakukan secara mendalam, dapat disimpulkan bahwa fenomena 'iklan boros tapi hasil minim' yang dialami oleh para Owner UMKM berakar dari minimnya literasi strategis dan keterampilan teknis dalam manajemen periklanan digital. Oleh karena itu, penyelenggaraan 'Pelatihan Digital Marketing untuk UMK' oleh PT Obayito merupakan langkah intervensi yang sangat krusial, mendesak, dan tepat sasaran. Dengan berfokus pada kompetensi inti yaitu kemampuan mengembangkan strategi penjualan media digital, program pelatihan ini direkomendasikan untuk segera dieksekusi menggunakan pendekatan praktikal (hands-on) dan studi kasus nyata. Melalui pembekalan materi yang terstruktur mulai dari fondasi hingga analitik lanjutan, diharapkan para peserta dapat menutup kesenjangan kompetensi yang ada, menghentikan pemborosan anggaran iklan, dan secara signifikan meningkatkan volume penjualan bisnis mereka di era digital.",
+  "sign_off": {
+    "prepared_by": "Trainer Utama",
+    "city": "",
+    "date": "21 April 2026"
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "document_type": "bukti-4",
+  "context": {
+    "unit_code": "N.79JPW00.139.1",
+    "unit_detail": {
+      "unitCode": "N.79JPW00.139.1",
+      "unitTitle": "Mengembangkan Strategi Peningkatan Penjualan Media Digital",
+      "unitDescription": "Unit ini menjelaskan pengetahuan, keterampilan, dan sikap kerja yang diperlukan untuk mengembangkan strategi penjualan yang mendukung pencapaian sasaran pemasaran digital.",
+      "elements": [
+        {
+          "element_number": 1,
+          "element_title": "Mengevaluasi strategi penjualan yang ada",
+          "performance_criteria": [
+            {
+              "code": "1.1",
+              "description": "Strategi penjualan saat ini untuk semua produk dan pelayanan, ditinjau kembali."
+            },
+            {
+              "code": "1.2",
+              "description": "Strategi penjualan produk dan pelayanan saat ini dibandingkan."
+            },
+            {
+              "code": "1.3",
+              "description": "Strategi penjualan bersama diidentifikasi."
+            }
+          ]
+        },
+        {
+          "element_number": 2,
+          "element_title": "Merancang strategi penjualan",
+          "performance_criteria": [
+            {
+              "code": "2.1",
+              "description": "Efisiensi pengambilan keputusan terkait rencana penjualan dipertajam melalui informasi yang relevan."
+            },
+            {
+              "code": "2.2",
+              "description": "Perangkat yang tepat digunakan dalam melengkapi perencanaan dan analisa penjualan untuk pasar tertentu."
+            },
+            {
+              "code": "2.3",
+              "description": "Target penjualan dirancang."
+            },
+            {
+              "code": "2.4",
+              "description": "Target penjualan ditetapkan dengan meilbatkan pihak yang relevan dan menggunakan data yang terbaru."
+            }
+          ]
+        },
+        {
+          "element_number": 3,
+          "element_title": "Menerapkan strategi penjualan",
+          "performance_criteria": [
+            {
+              "code": "3.1",
+              "description": "Target penjualan dipastikan memperkuat tujuan dan hasil usaha."
+            },
+            {
+              "code": "3.2",
+              "description": "Strategi penjualan dipastikan mendukung rencana pemasaran dan promosi."
+            }
+          ]
+        }
+      ],
+      "performanceCriteria": [
+        {
+          "code": "1.1",
+          "description": "Strategi penjualan saat ini untuk semua produk dan pelayanan, ditinjau kembali."
+        },
+        {
+          "code": "1.2",
+          "description": "Strategi penjualan produk dan pelayanan saat ini dibandingkan."
+        },
+        {
+          "code": "1.3",
+          "description": "Strategi penjualan bersama diidentifikasi."
+        },
+        {
+          "code": "2.1",
+          "description": "Efisiensi pengambilan keputusan terkait rencana penjualan dipertajam melalui informasi yang relevan."
+        },
+        {
+          "code": "2.2",
+          "description": "Perangkat yang tepat digunakan dalam melengkapi perencanaan dan analisa penjualan untuk pasar tertentu."
+        },
+        {
+          "code": "2.3",
+          "description": "Target penjualan dirancang."
+        },
+        {
+          "code": "2.4",
+          "description": "Target penjualan ditetapkan dengan meilbatkan pihak yang relevan dan menggunakan data yang terbaru."
+        },
+        {
+          "code": "3.1",
+          "description": "Target penjualan dipastikan memperkuat tujuan dan hasil usaha."
+        },
+        {
+          "code": "3.2",
+          "description": "Strategi penjualan dipastikan mendukung rencana pemasaran dan promosi."
+        }
+      ],
+      "requiredKnowledge": [],
+      "requiredSkills": [],
+      "workAttitudes": [],
+      "criticalAspects": [],
+      "assessmentContext": [],
+      "variableConstraints": {
+        "context": {
+          "scope": [
+            "Unit ini diterapkan pada semua sektor industri yang memimpin dan mengelola orang di dalam divisi usaha dari industri perjalanan dan dapat mencakupi:",
+            "Strategi penjulan mencakupi, namun tidak terbatas pada:",
+            "Produk dan pelayanan mencakupi, namun tidak terbatas pada:",
+            "Strategi penjualan produk dapat mencakupi, namun tidak terbatas pada:",
+            "Strategi penjualan bersama mencakupi, namun tidak terbatas pada:",
+            "Informasi yang relevan mencakupi, namun tidak terbatas pada:",
+            "Perangkat yang tepat digunakan dalam melengkapi perencanaan dan analisa penjualan untuk pasar tertentu mencakupi, namun tidak terbatas pada:",
+            "Pihak yang relevan mencakupi, namun tidak terbatas pada:",
+            "Tujuan dan hasil usaha mencakupi, namun tidak terbatas pada:"
+          ],
+          "definitions": [],
+          "explanatory_notes": [
+            "Biro Perjalanan Wisata (BPW) termasuk:",
+            "Tour operation/Travel Management Company (TMC).",
+            "Inbound tour operator/Destination Management Company (DMC).",
+            "Biro perjalanan wisata umroh dan haji.",
+            "Wholesaler.",
+            "Incentive house.",
+            "Online Travel Agent (OTA).",
+            "Agen perjalanan wisata (APW).",
+            "Aktivitas promosi.",
+            "Teknik penjualan.",
+            "Pengolahan wilayah.",
+            "Membina hubungan.",
+            "Pengetahuan produk.",
+            "Penerapan prosedur.",
+            "Manajemen waktu.",
+            "Keterampilan negosiasi.",
+            "Merek.",
+            "Kategori dan pengolahan produk.",
+            "Jajanan produk.",
+            "Pelanggan.",
+            "Jenis produk atau pelayanan.",
+            "Merchandising dan penempatannya.",
+            "Periode potongan harga dan sale.",
+            "Durasi.",
+            "Siklus.",
+            "Cakupan wilayah promosi dimana produk dan pelayanan difokuskan.",
+            "Produk.",
+            "Jajanan/rentang.",
+            "Lini.",
+            "Kategori.",
+            "Kinerja.",
+            "Harga.",
+            "Keuntungan.",
+            "Pangsa merek.",
+            "Pangsa pasar.",
+            "Data kinerja penjualan saat ini.",
+            "Kontrak penjualan.",
+            "Prakiraan tren.",
+            "Peluang.",
+            "Kapasitas.",
+            "Komitmen ketersediaan sumber daya.",
+            "Lokasi.",
+            "Produk dan pelayanan.",
+            "Penyajian dan kemasan produk",
+            "Faktor kualitas, namun tidak terbatas pada:",
+            "Waktu.",
+            "Biaya.",
+            "Variasi.",
+            "Akses.",
+            "Kesinambungan.",
+            "Konsultan internal dan eksternal.",
+            "Karyawan.",
+            "Supervisor dan manajer yang relevan.",
+            "Indikator Kinerja Utama (IKU).",
+            "Sasaran strategis.",
+            "Harga.",
+            "Indikator penjualan dan pasar.",
+            "Nilai merek.",
+            "Kriteria standar mutu.",
+            "Referensi kinerja.",
+            "Riawayat penjualan."
+          ]
+        },
+        "equipment": [
+          "Alat pengolah data",
+          "Media penyimpanan data",
+          "Media komunikasi",
+          "Jaringan saluran komunikasi",
+          "Alat Tulis Kantor (ATK)",
+          "Formulir dan dokumen mengenai strategi peningkatan penjualan sesuai dengan kebijakan dan prosedur perusahaan"
+        ],
+        "regulations": [
+          "Undang-Undang Nomor 19 Tahun 2016 tentang Informasi dan Transaksi Elektronik",
+          "Undang-Undang Nomor 10 Tahun 2019 tentang Kepariwisataan"
+        ],
+        "norms_and_standards": [
+          "(Tidak ada.) (Tidak ada.)"
+        ]
+      }
+    }
+  },
+  "generated": {
+    "candidate_name": null,
+    "assessor_name": null,
+    "assessment_date": null,
+    "assessment_venue": "Tempat Uji Kompetensi (TUK)",
+    "scenario": "Anda bertindak sebagai Manajer Pemasaran Digital di sebuah Biro Perjalanan Wisata (BPW). Anda ditugaskan untuk mengevaluasi strategi penjualan yang sedang berjalan, kemudian merancang dan menerapkan strategi peningkatan penjualan media digital yang baru untuk mencapai target perusahaan.",
+    "practical_tasks": [
+      {
+        "task_number": 1,
+        "task_instruction": "Lakukan evaluasi terhadap strategi penjualan yang ada saat ini, termasuk meninjau kembali strategi untuk semua produk/pelayanan, membandingkannya, dan mengidentifikasi strategi penjualan bersama."
+      },
+      {
+        "task_number": 2,
+        "task_instruction": "Rancang strategi penjualan yang baru dengan memanfaatkan informasi relevan untuk efisiensi keputusan, menggunakan perangkat analisa yang tepat, serta merancang dan menetapkan target penjualan bersama pihak terkait."
+      },
+      {
+        "task_number": 3,
+        "task_instruction": "Terapkan strategi penjualan tersebut dengan memastikan bahwa target yang dibuat memperkuat tujuan usaha dan mendukung rencana pemasaran serta promosi perusahaan."
+      }
+    ],
+    "observation_checklist": [
+      {
+        "element": "Mengevaluasi strategi penjualan yang ada",
+        "criteria": [
+          {
+            "code": "1.1",
+            "observable_action": "Kandidat mampu meninjau kembali strategi penjualan saat ini untuk semua produk dan pelayanan secara komprehensif."
+          },
+          {
+            "code": "1.2",
+            "observable_action": "Kandidat mampu membandingkan strategi penjualan produk dan pelayanan saat ini dengan objektif."
+          },
+          {
+            "code": "1.3",
+            "observable_action": "Kandidat mampu mengidentifikasi strategi penjualan bersama yang potensial."
+          }
+        ]
+      },
+      {
+        "element": "Merancang strategi penjualan",
+        "criteria": [
+          {
+            "code": "2.1",
+            "observable_action": "Kandidat mampu mempertajam efisiensi pengambilan keputusan terkait rencana penjualan menggunakan informasi yang relevan."
+          },
+          {
+            "code": "2.2",
+            "observable_action": "Kandidat mampu menggunakan perangkat yang tepat untuk melengkapi perencanaan dan analisa penjualan pada pasar tertentu."
+          },
+          {
+            "code": "2.3",
+            "observable_action": "Kandidat mampu merancang target penjualan yang realistis dan terukur."
+          },
+          {
+            "code": "2.4",
+            "observable_action": "Kandidat mampu menetapkan target penjualan dengan melibatkan pihak relevan dan menggunakan data terbaru."
+          }
+        ]
+      },
+      {
+        "element": "Menerapkan strategi penjualan",
+        "criteria": [
+          {
+            "code": "3.1",
+            "observable_action": "Kandidat mampu memastikan target penjualan memperkuat tujuan dan hasil usaha perusahaan."
+          },
+          {
+            "code": "3.2",
+            "observable_action": "Kandidat mampu memastikan strategi penjualan yang diterapkan mendukung rencana pemasaran dan promosi."
+          }
+        ]
+      }
+    ]
+  }
+}

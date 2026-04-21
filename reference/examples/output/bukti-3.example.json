@@ -1,0 +1,32 @@
+{
+  "document_type": "bukti-3",
+  "context": {
+    "program_name": "Pelatihan Digital Marketing untuk UMK",
+    "competency_focus": "Mampu mengembangkan strategi untuk meningkatkan penjualan media digital.",
+    "unit_code": "N.79JPW00.139.1",
+    "map": {
+      "unitCode": "N.79JPW00.139.1",
+      "tujuanUtama": "Pengelolaan Jasa Perjalanan Wisata",
+      "fungsiKunci": "Pengelolaan operasional tur (tour operation)",
+      "fungsiUtama": "Pemasaran digital",
+      "fungsiDasar": "Mengembangkan strategi peningkatan penjualan media digital"
+    }
+  },
+  "required_inputs": [
+    "unit_code",
+    "map.tujuanUtama",
+    "map.fungsiKunci",
+    "map.fungsiDasar"
+  ],
+  "optional_inputs": [],
+  "missing_required_inputs": [],
+  "source_dependencies": [
+    "skkni_map"
+  ],
+  "generation_allowed": true,
+  "generated": {
+    "program_description": "Program Pelatihan Digital Marketing untuk UMK dirancang untuk membekali peserta dengan keterampilan praktis dalam merancang dan mengeksekusi strategi pemasaran digital. Fokus utama pelatihan ini adalah peningkatan penjualan melalui berbagai platform media digital yang relevan dengan industri pariwisata dan pengelolaan jasa perjalanan wisata.",
+    "competency_summary": "Peserta diharapkan mampu menguasai unit kompetensi N.79JPW00.139.1, yang mencakup kemampuan dasar dalam mengembangkan strategi peningkatan penjualan media digital. Kompetensi ini merupakan bagian integral dari fungsi pemasaran digital dalam pengelolaan operasional tur.",
+    "assessment_criteria": "Penilaian akan didasarkan pada kemampuan peserta dalam menyusun dokumen strategi pemasaran digital, implementasi kampanye promosi, dan analisis metrik penjualan pada platform digital."
+  }
+}
