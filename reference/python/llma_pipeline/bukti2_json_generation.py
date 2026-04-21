@@ -10,7 +10,7 @@ def build_bukti_2_system_prompt() -> str:
         "Kamu adalah JSON payload composer untuk template Carbone dokumen Bukti 2 (TNA Mikro). "
         "Output harus JSON valid saja. Jangan output HTML. Jangan output markdown. "
         "Dokumen harus menyerupai TNA Mikro yang formal, rinci, dan cukup panjang. "
-        "Wajib ada: organization_profile, program_identity, vision, mission, sdm_analysis, competency_needs_analysis, training_recommendations, conclusion. "
+        "Wajib ada: organization_profile, program_identity, vision, mission, sdm_analysis, competency_needs_analysis, semester_plan, training_recommendations, conclusion. "
         "Jangan pendek dan jangan hanya 2 paragraf."
     )
 
@@ -18,7 +18,7 @@ def build_bukti_2_system_prompt() -> str:
 def build_bukti_2_prompt(payload: dict[str, Any]) -> str:
     return (
         "Bentuk JSON final untuk Bukti 2: TNA Mikro. "
-        "Fokus pada kebutuhan kompetensi mikro dari target peserta, lengkap dengan visi, misi, analisa SDM, analisis kebutuhan kompetensi, gap kompetensi, dan rekomendasi pelatihan.\n\n"
+        "Fokus pada kebutuhan kompetensi mikro dari target peserta, lengkap dengan visi, misi, analisa SDM, standar kinerja, analisis kebutuhan kompetensi, gap kompetensi, rencana pembelajaran semester, dan rekomendasi pelatihan.\n\n"
         f"PAYLOAD:\n{json.dumps(payload, ensure_ascii=False)}"
     )
 
@@ -102,6 +102,20 @@ def normalize_bukti_2_json(raw: dict[str, Any], payload: dict[str, Any]) -> dict
             ],
             "narrative": sdm_text,
         }
+    while len(sdm_analysis.get("main_tasks", [])) < 3:
+        defaults = [
+            "Mengidentifikasi kebutuhan dan masalah utama dalam aktivitas kerja atau usaha",
+            "Menyusun dan menjalankan strategi kerja yang relevan dengan tujuan program",
+            "Mengevaluasi hasil implementasi dan melakukan perbaikan berkelanjutan",
+        ]
+        sdm_analysis.setdefault("main_tasks", []).append(defaults[len(sdm_analysis.get("main_tasks", []))])
+    while len(sdm_analysis.get("performance_standards", [])) < 3:
+        defaults = [
+            "Mampu menjalankan tugas dengan pendekatan yang terarah dan terukur",
+            "Mampu mengambil keputusan berdasarkan data dan konteks lapangan",
+            "Mampu menerapkan hasil pelatihan secara konsisten dalam aktivitas kerja/usaha",
+        ]
+        sdm_analysis.setdefault("performance_standards", []).append(defaults[len(sdm_analysis.get("performance_standards", []))])
 
     competency_text = raw.get("competency_needs_analysis", "")
     if isinstance(competency_text, dict):
@@ -128,6 +142,48 @@ def normalize_bukti_2_json(raw: dict[str, Any], payload: dict[str, Any]) -> dict
     else:
         training_recommendations = rec_text
 
+    semester_plan = raw.get("semester_plan")
+    if isinstance(semester_plan, list):
+        semester_plan = {
+            "description": "Rencana pembelajaran semester disusun bertahap untuk memastikan peserta menguasai kompetensi inti.",
+            "weekly_plan": [
+                {
+                    "week": item.get("week", f"Minggu {index + 1}") if isinstance(item, dict) else f"Minggu {index + 1}",
+                    "topic": item.get("topic", str(item)) if isinstance(item, dict) else str(item),
+                    "learning_outcome": item.get("learning_outcome", "Peserta mencapai target pembelajaran mingguan") if isinstance(item, dict) else "Peserta mencapai target pembelajaran mingguan",
+                }
+                for index, item in enumerate(semester_plan)
+            ],
+            "main_references": ["Materi program", "Referensi praktik terbaik"],
+        }
+    elif not semester_plan and isinstance(raw.get("rencana_pembelajaran_semester"), str):
+        semester_plan = {
+            "description": raw.get("rencana_pembelajaran_semester", ""),
+            "weekly_plan": [
+                {"week": "Minggu 1", "topic": "Pengantar materi", "learning_outcome": "Peserta memahami fondasi materi inti"},
+                {"week": "Minggu 2", "topic": "Praktik terarah", "learning_outcome": "Peserta mampu menerapkan materi secara langsung"},
+            ],
+            "main_references": ["Materi internal", "Referensi praktik terbaik"],
+        }
+    elif isinstance(semester_plan, str):
+        semester_plan = {
+            "description": semester_plan,
+            "weekly_plan": [
+                {"week": "Minggu 1", "topic": "Pengantar materi", "learning_outcome": "Peserta memahami fondasi materi inti"},
+                {"week": "Minggu 2", "topic": "Praktik terarah", "learning_outcome": "Peserta mampu menerapkan materi secara langsung"},
+            ],
+            "main_references": ["Materi internal", "Referensi praktik terbaik"],
+        }
+    elif not semester_plan:
+        semester_plan = {
+            "description": "Rencana pembelajaran semester disusun untuk memastikan peserta menguasai kompetensi inti secara bertahap dan terukur.",
+            "weekly_plan": [
+                {"week": "Minggu 1", "topic": "Orientasi kompetensi", "learning_outcome": "Peserta memahami tujuan dan struktur pembelajaran"},
+                {"week": "Minggu 2", "topic": "Pendalaman praktik", "learning_outcome": "Peserta dapat mengaplikasikan materi pada konteks kerja/usaha"},
+            ],
+            "main_references": ["Panduan program", "Referensi teknis yang relevan"],
+        }
+
     return {
         "document_type": "bukti-2",
         "document_title": raw.get("document_title", "TRAINING NEED ANALYSIS"),
@@ -138,6 +194,7 @@ def normalize_bukti_2_json(raw: dict[str, Any], payload: dict[str, Any]) -> dict
         "mission": mission,
         "sdm_analysis": sdm_analysis,
         "competency_needs_analysis": competency_needs_analysis,
+        "semester_plan": semester_plan,
         "training_recommendations": training_recommendations,
         "conclusion": raw.get("conclusion", ""),
         "sign_off": {

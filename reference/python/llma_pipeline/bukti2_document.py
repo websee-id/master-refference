@@ -32,6 +32,7 @@ def render_bukti_2_html(data: dict[str, Any]) -> str:
     program = data.get("program_identity", {})
     sdm = data.get("sdm_analysis", {})
     comp = data.get("competency_needs_analysis", {})
+    semester = data.get("semester_plan", {})
     recommendations = data.get("training_recommendations", [])
     sign = data.get("sign_off", {})
 
@@ -67,13 +68,24 @@ def render_bukti_2_html(data: dict[str, Any]) -> str:
     <p><strong>Fungsi:</strong> {html.escape(sdm.get('function', ''))}</p>
     <p><strong>Tugas Pokok:</strong></p>
     <ul>{''.join(f'<li>{html.escape(item)}</li>' for item in sdm.get('main_tasks', []))}</ul>
-    <p><strong>Standar Kinerja:</strong></p>
+    <p><strong>Standar Kinerja (Capaian Pembelajaran):</strong></p>
     <ul>{''.join(f'<li>{html.escape(item)}</li>' for item in sdm.get('performance_standards', []))}</ul>
 
     <h3>Analisis Kebutuhan Kompetensi</h3>
     <p>{html.escape(comp.get('analysis_summary', ''))}</p>
     <p>{html.escape(comp.get('gap_description', ''))}</p>
     <ul>{''.join(f'<li>{html.escape(item)}</li>' for item in comp.get('priority_competencies', []))}</ul>
+
+    <h3>Rencana Pembelajaran Semester</h3>
+    <p>{html.escape(semester.get('description', ''))}</p>
+    <table>
+      <thead><tr><th>Minggu</th><th>Topik</th><th>Learning Outcome</th></tr></thead>
+      <tbody>
+        {''.join(f"<tr><td>{html.escape(item.get('week', ''))}</td><td>{html.escape(item.get('topic', ''))}</td><td>{html.escape(item.get('learning_outcome', ''))}</td></tr>" for item in semester.get('weekly_plan', []))}
+      </tbody>
+    </table>
+    <p><strong>Referensi Utama:</strong></p>
+    <ul>{''.join(f'<li>{html.escape(item)}</li>' for item in semester.get('main_references', []))}</ul>
 
     <h3>Rekomendasi Pelatihan</h3>
     <table>

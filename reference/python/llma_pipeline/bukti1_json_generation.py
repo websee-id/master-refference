@@ -11,6 +11,7 @@ def build_bukti_1_system_prompt() -> str:
         "Output harus JSON valid saja. Jangan output HTML. Jangan output markdown. "
         "Dokumen harus panjang, formal, dan menyerupai laporan TNA Makro nyata. "
         "Wajib ada section: pendahuluan, profil wilayah, metodologi, temuan utama, analisis kebutuhan, rekomendasi, kesimpulan. "
+        "Bagian profil_wilayah harus dipisah menjadi object dengan field regional_profile, business_landscape, dan opportunity_summary. Ketiga field itu wajib berbeda isi, tidak boleh copy-paste. "
         "Gunakan fakta exact dari payload apa adanya. AI boleh membantu menyusun konteks wilayah, lanskap usaha, peluang, analisis kebutuhan, dan rekomendasi. "
         "Jangan pendek dan jangan hanya outline."
     )
@@ -19,7 +20,8 @@ def build_bukti_1_system_prompt() -> str:
 def build_bukti_1_prompt(payload: dict[str, Any]) -> str:
     return (
         "Bentuk JSON final untuk Bukti 1: TNA Makro. "
-        "Isikan section berikut secara lengkap: profil wilayah, metodologi, temuan utama, analisis kebutuhan, rekomendasi, kesimpulan. "
+        "Isikan section berikut secara lengkap: pendahuluan, profil wilayah, metodologi, temuan utama, analisis kebutuhan, rekomendasi, kesimpulan. "
+        "profil_wilayah harus berupa object dengan tiga subsection yang berbeda: regional_profile, business_landscape, opportunity_summary. "
         "Setiap section harus cukup panjang untuk template dokumen formal.\n\n"
         f"PAYLOAD:\n{json.dumps(payload, ensure_ascii=False)}"
     )
@@ -62,6 +64,13 @@ def generate_bukti_1_json(*, payload: dict[str, Any], settings: Any, client: Any
 
 def normalize_bukti_1_json(raw: dict[str, Any], payload: dict[str, Any]) -> dict[str, Any]:
     context = payload.get("context", {})
+    raw_region = raw.get("profil_wilayah", {})
+    if isinstance(raw_region, str):
+        raw_region = {
+            "regional_profile": raw_region,
+            "business_landscape": raw.get("generated_business_landscape", raw_region),
+            "opportunity_summary": raw.get("generated_opportunity_summary", raw_region),
+        }
     findings_text = raw.get("temuan_utama", "")
     findings = [part.strip() for part in findings_text.split(".") if part.strip()]
     while len(findings) < 3:
@@ -81,9 +90,9 @@ def normalize_bukti_1_json(raw: dict[str, Any], payload: dict[str, Any]) -> dict
             "primary_region": context.get("training_location", raw.get("training_location", "")),
             "organization_city": raw.get("organization_city", context.get("organization_city", "")),
             "sector": raw.get("sector", context.get("sector", "")),
-            "generated_regional_profile": raw.get("profil_wilayah", raw.get("generated_regional_profile", "")),
-            "generated_business_landscape": raw.get("generated_business_landscape", raw.get("profil_wilayah", "")),
-            "generated_opportunity_summary": raw.get("generated_opportunity_summary", raw.get("profil_wilayah", "")),
+            "generated_regional_profile": raw_region.get("regional_profile", raw.get("generated_regional_profile", "")),
+            "generated_business_landscape": raw_region.get("business_landscape", raw.get("generated_business_landscape", raw.get("generated_regional_profile", ""))),
+            "generated_opportunity_summary": raw_region.get("opportunity_summary", raw.get("generated_opportunity_summary", raw.get("generated_regional_profile", ""))),
         },
         "introduction": {
             "background": raw.get("pendahuluan", raw.get("generated_background", "")),
